@@ -1,0 +1,17 @@
+.user-page {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.description {
+    min-height: 100px;
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background-color: #636363;
+    padding: 16px;
+
+}

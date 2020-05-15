@@ -1,0 +1,29 @@
+<div class="landing-page">
+  <div class="description" (click)="changePosition()">
+    <p class="yellow">Be welcome to our website, here you will find the best
+      products for your need! We have the best quality for the best price.</p>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-container" (mouseenter)="stopAnimation()" (mouseleave)="playAnimation()">
+      <div class="img-container" [@currentPosition]="position">
+
+        <div *ngFor="let src of imageSources; let i=index;" class="img-box">
+          <img [src]="src" alt="">
+          <div class="msg-up">{{productData[i].name}}</div>
+          <div class="msg-bottom"> Sizes: {{productData[i].sizes}}</div>
+        </div>
+        <div *ngFor="let src of imageSources; let i=index;" class="img-box">
+          <img [src]="src" alt="">
+          <div class="msg-up">{{productData[i].name}}</div>
+          <div class="msg-bottom"> Sizes: {{productData[i].sizes}}</div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
